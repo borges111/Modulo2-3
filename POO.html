@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome //atributo
+        var idade
+        var comportamento
+        function setNome(n) //parametro
+        {
+            //logica
+           this.nome = n
+        }
+        function setIdade(i) //parametro
+        {
+            //logica
+           this.idade = i
+        }
+        function setComportamento(c) //parametro
+        {
+            //logica
+           this.comportamento = c
+        }
+        function getNome() //parametro
+        {
+            //console.log(this.nome)
+            return this.nome
+        }
+        function getIdade() //parametro
+        {
+            //console.log(this.idade)
+            return this.idade
+        }
+        function getComportamento() //parametro
+        {
+            //console.log(this.comportamento)
+            return this.comportamento
+        }
+        setNome("Zicão"), setIdade(10), setComportamento("deitar no chão!")
+        document.write("o nome do cachorro é: " + getNome() + " e sua idade é : "
+        + getIdade() + "e o seu comportmento foi: " + getComportamento())
+        //getNome()
+        //getIdade()
+        //getComportamento()
+        
+    </script>
+</body>
+</html>
